@@ -1,0 +1,57 @@
+/* Selectors
+1. Tag Name => Global Selector
+2. ID => Unique Selector
+3. Class
+ */
+
+img {
+  max-width: 100%;
+}
+
+/* * {
+  color: red;
+} */
+
+/* h2 {
+  color: red;
+} */
+/* #custom {
+  color: red;
+}
+
+.fancy {
+  color: hotpink;
+} */
+
+/* div>span {
+  color: blue;
+} */
+
+/* ul li:nth-child(1) { */
+/* ul li:not(:nth-child(3)) {
+  color: red;
+}
+
+input[type="email"] {
+  background-color: lightgray;
+}
+ */
+
+/* Start Hero Style */
+/* End Hero Style */
+
+/* 
+Css colors
+1. color name
+2. rgb
+3. rgba
+4. hexadecimal 
+*/
+
+li {
+  /* color: red; */
+  /* color: rgb(54, 150, 170); */
+  /* color: rgba(54 150 170 / 20%); */
+  /* color: rgba(54, 150, 170, 0.2); */
+  color: #12af
+}

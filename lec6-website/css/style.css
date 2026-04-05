@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #55097a;
+  --secondary-color: #292929;
+  --text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Style */
+header {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+
+.top-header p {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+
+header .menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* End Header style */
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+}
+
+.hero .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .wrapper>div {
+  width: 46%;
+}
+
+.hero .image img {
+  width: 100%;
+}
+
+.hero .text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero .text h1 span {
+  color: var(--primary-color);
+}
+
+.hero .text p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.hero .text a {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 18px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.hero .text a:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
