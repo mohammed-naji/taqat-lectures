@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* .box {
+  background-image: url(../images/639060Image1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+i {
+  font-size: 50px;
+  color: #f00;
+}
+
+i:hover {
+  color: #099;
+} */
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background: url(../images/COVER-10-Furniture-Essentials-For-Every-Home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+
+  margin-bottom: 50px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 26px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+ul a.fb {
+  background-color: #3b5998;
+}
+
+ul a.in {
+  background-color: #0077b5;
+}
+
+ul a.yt {
+  background-color: #ff0000;
+}
+
+ul a.is {
+  background-color: #e4405f;
+}
+
+ul a.sp {
+  background-color: #1db954;
+}
