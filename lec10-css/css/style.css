@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* p {
+  display: none;
+} */
+
+/* span {
+  background-color: yellow;
+  color: red;
+  display: block;
+} */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+} */
+
+/* 
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.about {
+  background-color: #f00;
+  padding: 60px 0;
+} */
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.flex-wrapper div {
+  width: calc(25% - 10px);
+  height: 100px;
+  background-color: #e87a2d;
+  border: 1px solid #000;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero img {
+  width: 100%;
+  height: calc(100vh - 70.29px);
+  object-fit: cover;
+  display: block;
+}
+
+.posts {
+  background-color: #def6ff;
+  padding: 60px 0;
+}
+
+.posts .post {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.posts .post:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.posts .post>div {
+  width: 43%;
+}
+
+.gallery {
+  padding: 60px 0;
+}
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-areas:
+    "abc abc two"
+    "three four four"
+    "three five six";
+  gap: 10px;
+  /* grid-template-columns: repeat(3, 1fr);
+  gap: 10px; */
+}
+
+.gallery-wrapper>div:nth-child(1) {
+  grid-area: abc;
+}
+
+.gallery-wrapper>div:nth-child(2) {
+  grid-area: two;
+}
+
+.gallery-wrapper>div:nth-child(3) {
+  grid-area: three;
+}
+
+.gallery-wrapper>div:nth-child(4) {
+  grid-area: four;
+}
+
+.gallery-wrapper>div:nth-child(5) {
+  grid-area: five;
+}
+
+.gallery-wrapper>div:nth-child(6) {
+  grid-area: six;
+}
+
+.gallery-wrapper>div {
+  background-color: #e87a2d;
+  border: 1px solid #000;
+  min-height: 100px;
+}
