@@ -1,0 +1,142 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Abx-New123';
+  src: url(../fonts/SupermercadoOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Sahmi';
+  src: url(../fonts/SHAMIAstrolabe-MASHQ1_122920.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Sahmi'; */
+  font-family: "Noto Kufi Arabic", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  height: 3000px;
+  padding-top: 70px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* p {
+  font-weight: 300;
+  font-size: 50px;
+} */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #e7e7e7;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  /* padding: 20px; */
+  /* transform: rotate(10deg); */
+  /* -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg); */
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  /* gap: 20px; */
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+header ul a {
+  padding: 20px 25px;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+header ul a:hover {
+  /* color: #007BFF; */
+  background-color: #007BFF;
+  /* border-bottom: 2px solid #007BFF; */
+}
+
+.top {
+  width: 60px;
+  height: 60px;
+  background-color: #007BFF;
+  position: fixed;
+  border-radius: 3px;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.top:hover i {
+  /* transform: translateY(-8px); */
+
+  animation: swing 1s ease infinite alternate;
+}
+
+@keyframes swing {
+  from {
+    transform: translateY(-8px);
+  }
+
+  to {
+    transform: translateY(8px);
+  }
+}
+
+/* @keyframes rayyes {
+  0% {
+    transform: translateY(-8px) rotate(-20deg);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(20deg);
+  }
+
+  100% {
+    transform: translateY(-8px) rotate(-20deg);
+  }
+} */
