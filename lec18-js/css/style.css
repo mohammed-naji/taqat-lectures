@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copy-box {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.copy-box i {
+  color: #929292;
+  cursor: pointer;
+}
+
+.copy-box i:hover {
+  color: #686868;
+}
+
+.copy-box span {
+  position: absolute;
+  font-size: 10px;
+  right: 35px;
+  top: 13px;
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+
+.copy-box .show {
+  opacity: 1;
+  visibility: visible;
+}
