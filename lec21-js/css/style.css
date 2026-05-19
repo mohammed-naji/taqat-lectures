@@ -1,0 +1,168 @@
+/* ::root {
+  --primary-color: #333;
+  --background-color: #fff;
+  --text-color: #333;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+header .menu button {
+  padding: 8px;
+  border: none;
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  display: none;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #a1a1a1;
+}
+
+header .theme-toggle {
+  cursor: pointer;
+}
+
+.services {
+  padding: 60px 0;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.services .cards {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .services .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  header .menu ul {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    background: #dddddd;
+    left: 0;
+    width: 100%;
+    top: 73px;
+    padding: 30px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  header .menu ul.active {
+    transform: scaleY(1);
+  }
+
+  header .menu ul li:not(:last-child) a {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bcbcbc;
+    width: 100%;
+    display: block;
+  }
+
+  header .menu button {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Dark Style */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark header {
+  background-color: #555;
+}
+
+body.dark header a {
+  color: #fff;
+}
+
+body.dark .hero {
+  background-color: #222222;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  header .dark-style {
+    display: none;
+  }
+
+  header {
+    background-color: #555;
+  }
+
+  header a {
+    color: #fff;
+  }
+
+  .hero {
+    background-color: #222222;
+  }
+}
